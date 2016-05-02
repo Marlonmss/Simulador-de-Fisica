@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Session Name="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\Simulador de Fisica.workspace">
+  <int Value="0" Name="m_selectedTab"/>
+  <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\Simulador de Fisica.workspace" Name="m_workspaceName"/>
+  <TabInfoArray Name="TabInfoArray">
+    <TabInfo>
+      <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\SimuladorFisica\Mecanica.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="16" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\SimuladorFisica\Mecanica.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\SimuladorFisica\UniformementeVariado.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="18" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\SimuladorFisica\UniformementeVariado.cpp" Name="FileName"/>
+      <int Value="54" Name="FirstVisibleLine"/>
+      <int Value="78" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\SimuladorFisica\UniformementeVariadoObliquo.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="7" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\SimuladorFisica\UniformementeVariadoObliquo.cpp" Name="FileName"/>
+      <int Value="60" Name="FirstVisibleLine"/>
+      <int Value="77" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\SimuladorFisica\UniformementeVariadoCircular.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="3" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\SimuladorFisica\UniformementeVariadoCircular.cpp" Name="FileName"/>
+      <int Value="87" Name="FirstVisibleLine"/>
+      <int Value="115" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\SimuladorFisica\Matematica.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="13" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\SimuladorFisica\Matematica.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\SimuladorFisica\Vetor.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="19" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\SimuladorFisica\Vetor.cpp" Name="FileName"/>
+      <int Value="39" Name="FirstVisibleLine"/>
+      <int Value="66" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\SimuladorFisica\Forca.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="16" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\SimuladorFisica\Forca.cpp" Name="FileName"/>
+      <int Value="48" Name="FirstVisibleLine"/>
+      <int Value="84" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\SimuladorFisica\ForcaAtrito.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="6" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\SimuladorFisica\ForcaAtrito.cpp" Name="FileName"/>
+      <int Value="35" Name="FirstVisibleLine"/>
+      <int Value="64" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\SimuladorFisica\ForcaElastica.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="6" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\SimuladorFisica\ForcaElastica.cpp" Name="FileName"/>
+      <int Value="15" Name="FirstVisibleLine"/>
+      <int Value="37" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\SimuladorFisica\ForcaCentripeda.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="6" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\SimuladorFisica\ForcaCentripeda.cpp" Name="FileName"/>
+      <int Value="5" Name="FirstVisibleLine"/>
+      <int Value="41" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\SimuladorFisica\main.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="48" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\SimuladorFisica\TrabalhoEnergia.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="7" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\SimuladorFisica\TrabalhoEnergia.cpp" Name="FileName"/>
+      <int Value="86" Name="FirstVisibleLine"/>
+      <int Value="127" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\SimuladorFisica\QuantidadeMovimento.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="6" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Alguem\git\Simulador-de-Fisica\Simulador de Fisica\SimuladorFisica\QuantidadeMovimento.cpp" Name="FileName"/>
+      <int Value="31" Name="FirstVisibleLine"/>
+      <int Value="60" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+  </TabInfoArray>
+  <SerializedObject Name="m_breakpoints">
+    <long Value="0" Name="Count"/>
+  </SerializedObject>
+</Session>

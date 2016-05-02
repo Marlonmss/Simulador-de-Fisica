@@ -1,0 +1,1 @@
+./Debug/main.cpp.o ./Debug/Mecanica.cpp.o ./Debug/UniformementeVariado.cpp.o ./Debug/UniformementeVariadoObliquo.cpp.o ./Debug/UniformementeVariadoCircular.cpp.o ./Debug/Matematica.cpp.o ./Debug/Vetor.cpp.o ./Debug/Forca.cpp.o ./Debug/ForcaAtrito.cpp.o ./Debug/ForcaElastica.cpp.o ./Debug/ForcaCentripeda.cpp.o ./Debug/TrabalhoEnergia.cpp.o ./Debug/QuantidadeMovimento.cpp.o   
