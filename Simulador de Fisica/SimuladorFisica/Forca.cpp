@@ -7,6 +7,13 @@ Forca::Forca()
 	this->aceleracao = 0;
 }
 
+Forca::Forca(const double& forca, const double& massa, const double& aceleracao)
+{
+	this->forca = forca;
+	this->massa = massa;
+	this->aceleracao = aceleracao;
+}
+
 Forca::Forca(const Forca& copia)
 {
 	this->forca = copia.forca;
@@ -17,7 +24,7 @@ Forca::~Forca()
 {
 }
 
-double Forca::mudarVariaveis(const double& forca, const double& massa, const double& aceleracao)
+void Forca::mudarVariaveis(const double& forca, const double& massa, const double& aceleracao)
 {
 	this->forca = forca;
 	this->massa = massa;

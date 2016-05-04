@@ -18,11 +18,20 @@ UniformementeVariadoObliquo::UniformementeVariadoObliquo(const UniformementeVari
 	this->alcance_x = copia.alcance_x;
 }
 
+UniformementeVariadoObliquo::UniformementeVariadoObliquo(const Vetor& velocidade0, const double& eixo_x, const double& eixo_y, const double& tempo, const double& alcance_x)
+{
+	this->velocidade0 = velocidade0;
+	this->eixo_x = eixo_x;
+	this->eixo_y = eixo_y;
+	this->tempo = tempo;
+	this->alcance_x = alcance_x;
+}
+
 UniformementeVariadoObliquo::~UniformementeVariadoObliquo()
 {
 }
 
-double UniformementeVariadoObliquo::mudarVariaveis(const Vetor& velocidade0, const double& eixo_x, const double& eixo_y, const double& tempo, const double& alcance_x)
+void UniformementeVariadoObliquo::mudarVariaveis(const Vetor& velocidade0, const double& eixo_x, const double& eixo_y, const double& tempo, const double& alcance_x)
 {
 	this->velocidade0 = velocidade0;
 	this->eixo_x = eixo_x;
@@ -75,9 +84,18 @@ void UniformementeVariadoObliquo::operator+=(const UniformementeVariadoObliquo& 
 
 ostream& operator<<(ostream& output, const UniformementeVariadoObliquo& imprime)
 {
-	 output << "Modulo da velocidade inicial"; imprime.velocidade0.modulo;
-	 output << "\nDeslocamento na horizontal: " << imprime.eixo_x
+	 output << "Modulo da velocidade inicial" << imprime.velocidade0
+	 << "\nDeslocamento na horizontal: " << imprime.eixo_x
 	 << "\nDeslocamento na vertical: " << imprime.eixo_y
 	 << "\nTempo: " << imprime.tempo
 	 << "\nAlcance Maximo: " << imprime.alcance_x;
+}
+
+void UniformementeVariadoObliquo::imprimir()
+{
+	cout << "Modulo da velocidade inicial" << velocidade0
+	<< "\nDeslocamento na horizontal: " << eixo_x
+	<< "\nDeslocamento na vertical: " << eixo_y
+	<< "\nTempo: " << tempo
+	<< "\nAlcance Maximo: " << alcance_x;
 }

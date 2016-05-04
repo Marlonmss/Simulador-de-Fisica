@@ -11,6 +11,17 @@ UniformementeVariadoCircular::UniformementeVariadoCircular()
 	this->aceleracao_centripeda = 0;
 }
 
+UniformementeVariadoCircular::UniformementeVariadoCircular(const double& velocidade_angular, const double& eixo_x, const double& deslocamento_angular, const double& aceleracao_angular, const double& tempo, const double& raio, const double& aceleracao_centripeda)
+{
+	this->velocidade_angular = velocidade_angular;
+	this->eixo_x = eixo_x;
+	this->deslocamento_angular = deslocamento_angular;
+	this->aceleracao_angular = aceleracao_angular;
+	this->tempo = tempo;
+	this->raio = raio;
+	this->aceleracao_centripeda = aceleracao_centripeda;
+}
+
 UniformementeVariadoCircular::~UniformementeVariadoCircular()
 {
 }
@@ -26,7 +37,7 @@ UniformementeVariadoCircular::UniformementeVariadoCircular(const UniformementeVa
 	this->aceleracao_centripeda = copia.aceleracao_centripeda;
 }
 
-double UniformementeVariadoCircular::mudarVariaveis(const double& velocidade_angular, const double& eixo_x, const double& deslocamento_angular, const double& aceleracao_angular, const double& tempo, const double& raio, const double& aceleracao_centripeda)
+void UniformementeVariadoCircular::mudarVariaveis(const double& velocidade_angular, const double& eixo_x, const double& deslocamento_angular, const double& aceleracao_angular, const double& tempo, const double& raio, const double& aceleracao_centripeda)
 {
 	this->velocidade_angular = velocidade_angular;
 	this->eixo_x = eixo_x;
@@ -114,4 +125,15 @@ ostream& operator<<(ostream& output, const UniformementeVariadoCircular& imprime
 	<< "\nTempo: " << imprime.tempo
 	<< "\nRaio: " << imprime.raio
 	<< "\nAceleracao centripeda: " << imprime.aceleracao_centripeda;
+}
+
+void UniformementeVariadoCircular::imprimir()
+{
+	cout << "Velocidade angular: " << velocidade_angular
+	<< "\nDeslocamento na horizontal: " << eixo_x
+	<< "\nDeslocamento angular: " << deslocamento_angular
+	<< "\nAceleracao angular: " << aceleracao_angular
+	<< "\nTempo: " << tempo
+	<< "\nRaio: " << raio
+	<< "\nAceleracao centripeda: " << aceleracao_centripeda;
 }

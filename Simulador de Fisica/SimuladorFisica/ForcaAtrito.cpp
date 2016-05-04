@@ -9,6 +9,15 @@ ForcaAtrito::ForcaAtrito()
 	this->coef_atrito_d = 0;
 }
 
+ForcaAtrito::ForcaAtrito(const double& atrito, const double& normal, const double& coef_atrito, const double& coef_atrito_e, const double& coef_atrito_d)
+{
+	this->atrito = atrito;
+	this->normal = normal; 
+	this->coef_atrito = coef_atrito;
+	this->coef_atrito_e = coef_atrito_e;
+	this->coef_atrito_d = coef_atrito_d;
+}
+
 ForcaAtrito::~ForcaAtrito()
 {
 }
@@ -61,4 +70,13 @@ ostream& operator<<(ostream& output, const ForcaAtrito& imprime)
 	<< "\nCoeficiente de atrito: " << imprime.coef_atrito
 	<< "\nCoeficiente de atrito estatico: " << imprime.coef_atrito_e
 	<< "\nCoeficiente de atrito dinamico: " << imprime.coef_atrito_d;
+}
+
+void ForcaAtrito::imprimir()
+{
+	cout << "Forca de Atrito: " << atrito
+	<< "\nForca Normal: " << normal
+	<< "\nCoeficiente de atrito: " << coef_atrito
+	<< "\nCoeficiente de atrito estatico: " << coef_atrito_e
+	<< "\nCoeficiente de atrito dinamico: " << coef_atrito_d;
 }

@@ -10,6 +10,16 @@ QuantidadeMovimento::QuantidadeMovimento()
 	this->velocidade = 0;
 }
 
+QuantidadeMovimento::QuantidadeMovimento(const double& impulso, const double& forca, const double& tempo, const double& quant_movimento, const double& massa, const double& velocidade)
+{
+	this->impulso = impulso;
+	this->forca = forca;
+	this->tempo = tempo;
+	this->quant_movimento = quant_movimento;
+	this->massa = massa;
+	this->velocidade = velocidade;
+}
+
 QuantidadeMovimento::QuantidadeMovimento(const QuantidadeMovimento& copia)
 {
 	this->impulso = copia.impulso;
@@ -59,4 +69,14 @@ ostream& operator<<(ostream& output, const QuantidadeMovimento& imprime)
 	<< "\nQuantidade de movimento: " << imprime.quant_movimento
 	<< "\nMassa: " << imprime.massa
 	<< "\nVelocidade: " << imprime.velocidade;
+}
+
+void QuantidadeMovimento::imprimir()
+{
+	cout << "Impulso: " << impulso
+	<< "\nForca: " << forca
+	<< "\nTempo: " << tempo
+	<< "\nQuantidade de movimento: " << quant_movimento
+	<< "\nMassa: " << massa
+	<< "\nVelocidade: " << velocidade;
 }

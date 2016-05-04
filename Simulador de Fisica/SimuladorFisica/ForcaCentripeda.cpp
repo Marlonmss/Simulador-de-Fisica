@@ -16,15 +16,23 @@ ForcaCentripeda::ForcaCentripeda(const ForcaCentripeda& copia)
 	this->raio = copia.raio;
 }
 
+ForcaCentripeda::ForcaCentripeda(const double& forca_centripeda, const double& massa, const double& velocidade, const double& raio)
+{
+	this->forca_centripeda = forca_centripeda;
+	this->massa = massa;
+	this->velocidade = velocidade;
+	this->raio = raio;
+}
+
 ForcaCentripeda::~ForcaCentripeda()
 {
 }
 
-double ForcaCentripeda::calcFocaCentripeda()
+double ForcaCentripeda::calcForcaCentripeda()
 {
 	return forca_centripeda = massa*velocidade*velocidade/raio;
 }
-double ForcaCentripeda::calcFocaCentripeda(const double& mass, const double& velo, const double& r)
+double ForcaCentripeda::calcForcaCentripeda(const double& mass, const double& velo, const double& r)
 {
 	return mass*velo*velo/r;
 }
@@ -43,4 +51,12 @@ ostream& operator<<(ostream& output, const ForcaCentripeda& imprime)
 	<< "\nMassa: " << imprime.massa
 	<< "\nVelocidade: " << imprime.velocidade
 	<< "\nRaio: " << imprime.raio;
+}
+
+void ForcaCentripeda::imprimir()
+{
+	cout << "Forca centripeda: " << forca_centripeda
+	<< "\nMassa: " << massa
+	<< "\nVelocidade: " << velocidade
+	<< "\nRaio: " << raio;
 }

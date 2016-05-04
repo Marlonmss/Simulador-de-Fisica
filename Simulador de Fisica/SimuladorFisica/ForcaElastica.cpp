@@ -14,13 +14,20 @@ ForcaElastica::ForcaElastica(const ForcaElastica& copia)
 	this->deformacao_mola = copia.deformacao_mola;
 }
 
+ForcaElastica::ForcaElastica(const double& forca_elastica, const double& const_elastica, const double& deformacao_mola)
+{
+	this->forca_elastica = forca_elastica;
+	this->const_elastica = const_elastica;
+	this->deformacao_mola = deformacao_mola;
+}
+
 ForcaElastica::~ForcaElastica()
 {
 }
 
 double ForcaElastica::calcForcaElastica()
 {
-	return forca_elastica.modulo = const_elastica*deformacao_mola;
+	return forca_elastica = const_elastica*deformacao_mola;
 }
 double ForcaElastica::calcForcaElastica(const double& const_e, const double& def)
 {
@@ -38,4 +45,11 @@ ostream& operator<<(ostream& output, const ForcaElastica& imprime)
 	output << "Forca elastica: " << imprime.forca_elastica
 	<< "\nConstante elastica: " << imprime.const_elastica
 	<< "\nDeformacao da mola: " << imprime.deformacao_mola;
+}
+
+void ForcaElastica::imprimir()
+{
+	cout << "Forca elastica: " << forca_elastica
+	<< "\nConstante elastica: " << const_elastica
+	<< "\nDeformacao da mola: " << deformacao_mola;
 }

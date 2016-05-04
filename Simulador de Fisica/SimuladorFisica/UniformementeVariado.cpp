@@ -16,11 +16,19 @@ UniformementeVariado::UniformementeVariado(const UniformementeVariado& copia)
 	this->tempo = copia.tempo;
 }
 
+UniformementeVariado::UniformementeVariado(const double& velocidade, const double& eixo_x, const double& aceleracao, const double& tempo)
+{
+	this->velocidade = velocidade;
+	this->eixo_x = eixo_x;
+	this->aceleracao = aceleracao;
+	this->tempo = tempo;
+}
+
 UniformementeVariado::~UniformementeVariado()
 {
 }
 
-double UniformementeVariado::mudarVariaveis(const double& velocidade, const double& eixo_x, const double& aceleracao, const double& tempo)
+void UniformementeVariado::mudarVariaveis(const double& velocidade, const double& eixo_x, const double& aceleracao, const double& tempo)
 {
 	this->velocidade = velocidade;
 	this->eixo_x = eixo_x;
@@ -82,4 +90,12 @@ ostream& operator<<(ostream& output, const UniformementeVariado& imprime)
 	<< "\nDeslocamento: " << imprime.eixo_x
 	<< "\nAceleracao: " << imprime.aceleracao
 	<< "\nTempo: " << imprime.tempo;
+}
+
+void UniformementeVariado::imprimir()
+{
+	cout << "Velocidade: " << velocidade 
+	<< "\nDeslocamento: " << eixo_x
+	<< "\nAceleracao: " << aceleracao
+	<< "\nTempo: " << tempo;
 }

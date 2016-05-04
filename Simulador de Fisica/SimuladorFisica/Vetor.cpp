@@ -7,6 +7,12 @@ Vetor::Vetor()
 	this->modulo = 0;
 }
 
+Vetor::Vetor(const double& eixo_x, const double& eixo_y)
+{
+	this->eixo_x = eixo_x;
+	this->eixo_y = eixo_y;
+}
+
 Vetor::Vetor(const double& eixo_x, const double& eixo_y, const double& modulo)
 {
 	this->eixo_x = eixo_x;

@@ -18,6 +18,25 @@ TrabalhoEnergia::TrabalhoEnergia()
 	this->deformacao_mola = 0;
 }
 
+TrabalhoEnergia::TrabalhoEnergia(const double& trabalho, const double& potencia_media, const double& forca, const double& deslocamento, const double& teta, const double& energia_cinetica, 
+const double& energia_pot_gravitacional, const double& energia_pot_elastica, const double& energia_mecanica, const double& massa, const double& velocidade, const double& altura, const double& const_elastica, const double& deformacao_mola)
+{
+	this->trabalho = trabalho;
+	this->potencia_media = potencia_media;
+	this->forca = forca;
+	this->deslocamento = deslocamento;
+	this->teta = teta;
+	this->energia_cinetica = energia_cinetica;
+	this->energia_pot_gravitacional = energia_pot_gravitacional;
+	this->energia_pot_elastica = energia_pot_elastica;
+	this->energia_mecanica = energia_mecanica;
+	this->massa = massa;
+	this->velocidade = velocidade;
+	this->altura = altura;
+	this->const_elastica = const_elastica;
+	this->deformacao_mola = deformacao_mola;
+}
+
 TrabalhoEnergia::TrabalhoEnergia(const TrabalhoEnergia& copia)
 {
 	this->trabalho = copia.trabalho;
@@ -48,11 +67,11 @@ double TrabalhoEnergia::calcTrabalho(const double& forca, const double& deslocam
 {
 	return forca * deslocamento * cos(teta);
 }
-double TrabalhoEnergia::calcPontenciaMedia()
+double TrabalhoEnergia::calcPotenciaMedia()
 {
 	return potencia_media = forca*velocidade;
 }
-double TrabalhoEnergia::calcPontenciaMedia(const double& forca, const double& velocidade)
+double TrabalhoEnergia::calcPotenciaMedia(const double& forca, const double& velocidade)
 {
 	return forca*velocidade;
 }
@@ -80,14 +99,14 @@ double TrabalhoEnergia::calcEnergiaPotElastica(const double& const_elastica, con
 {
 	return 0.5*const_elastica*deformacao_mola*deformacao_mola;
 }
-double TrabalhoEnergia::calcEnergiaPotMecanica(const bool& flag)
+double TrabalhoEnergia::calcEnergiaMecanica(const bool& flag)
 {
 	if(flag == 1)
 		return energia_mecanica = energia_cinetica + energia_pot_elastica;
 	else
 		return energia_mecanica = energia_cinetica + energia_pot_gravitacional;
 }
-double TrabalhoEnergia::calcEnergiaPotMecanica(const double& energia_cinetica, const double& energia_potencial)
+double TrabalhoEnergia::calcEnergiaMecanica(const double& energia_cinetica, const double& energia_potencial)
 {
 	return energia_cinetica + energia_potencial;
 }
@@ -126,4 +145,22 @@ ostream& operator<<(ostream& output, const TrabalhoEnergia& imprime)
 	<< "\nAltura: " << imprime.altura
 	<< "\nConstante elastica: " << imprime.const_elastica
 	<< "\nDeformacao da mola: " << imprime.deformacao_mola;
+}
+
+void TrabalhoEnergia::imprimir()
+{
+	cout << "Trabalho: " <<trabalho
+	<< "\nPontencia media: " << potencia_media
+	<< "\nForca: " << forca
+	<< "\nDeslocamento: " << deslocamento
+	<< "\nAngulo: " << teta
+	<< "\nEnergia cinetica: " << energia_cinetica
+	<< "\nEnergia potencial gravitacional: " << energia_pot_gravitacional
+	<< "\nEnergia potencial elastica: " << energia_pot_elastica
+	<< "\nEnergia mecanica: " << energia_mecanica
+	<< "\nMassa: " << massa
+	<< "\nVelocidade: " << velocidade
+	<< "\nAltura: " << altura
+	<< "\nConstante elastica: " << const_elastica
+	<< "\nDeformacao da mola: " << deformacao_mola;
 }
