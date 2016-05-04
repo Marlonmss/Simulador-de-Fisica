@@ -11,28 +11,32 @@ class TrabalhoEnergia : public Mecanica
 	friend ostream& operator<<(ostream& output, const TrabalhoEnergia& imprime);
 public:
 	TrabalhoEnergia();
+	TrabalhoEnergia(const double& trabalho, const double& potencia_media, const double& forca, const double& deslocamento, const double& teta, const double& energia_cinetica, 
+	const double& energia_pot_gravitacional, const double& energia_pot_elastica, const double& energia_mecanica, const double& massa, const double& velocidade, const double& altura, const double& const_elastica, const double& deformacao_mola);
 	TrabalhoEnergia(const TrabalhoEnergia& copia);
 	~TrabalhoEnergia();
 	
-	double virtual calcTrabalho();
+	double calcTrabalho();
 	static double calcTrabalho(const double& forca, const double& deslocamento, const double& teta);
 	
-	double virtual calcPontenciaMedia();
-	static double calcPontenciaMedia(const double& forca, const double& velocidade);
+	double calcPotenciaMedia();
+	static double calcPotenciaMedia(const double& forca, const double& velocidade);
 	
-	double virtual calcEnergiaCinetica();
+	double calcEnergiaCinetica();
 	static double calcEnergiaCinetica(const double& velocidade, const double& massa);
 	
-	double virtual calcEnergiaPotGravitacional();
+	double calcEnergiaPotGravitacional();
 	static double calcEnergiaPotGravitacional(const double& massa, const double& altura);
 	
-	double virtual calcEnergiaPotElastica();
+	double calcEnergiaPotElastica();
 	static double calcEnergiaPotElastica(const double& const_elastica, const double& deformacao_mola);
 	
-	double virtual calcEnergiaPotMecanica(const bool& flag);
-	static double calcEnergiaPotMecanica(const double& energia_cinetica, const double& energia_potencial);
+	double calcEnergiaMecanica(const bool& flag);
+	static double calcEnergiaMecanica(const double& energia_cinetica, const double& energia_potencial);
 	
 	void operator+=(const TrabalhoEnergia& inc);
+	
+	virtual void imprimir();
 	
 private:
 	double trabalho;

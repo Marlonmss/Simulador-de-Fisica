@@ -11,9 +11,10 @@ class UniformementeVariadoObliquo : public Mecanica
 	friend ostream& operator<<(ostream& output, const UniformementeVariadoObliquo& imprime);
 public:
 	UniformementeVariadoObliquo();
+	UniformementeVariadoObliquo(const Vetor& velocidade0, const double& eixo_x, const double& eixo_y, const double& tempo, const double& alcance_x);
 	UniformementeVariadoObliquo(const UniformementeVariadoObliquo& copia);
 	~UniformementeVariadoObliquo();
-	double mudarVariaveis(const Vetor& velocidade0, const double& eixo_x, const double& eixo_y, const double& tempo, const double& alcance_x);
+	void mudarVariaveis(const Vetor& velocidade0, const double& eixo_x, const double& eixo_y, const double& tempo, const double& alcance_x);
 	double calcVelocidade0_x(const double& teta);
 	static double calcVelocidade0_x(const double& vel0, const double& teta);
 	double calcVelocidade0_y(const double& teta);

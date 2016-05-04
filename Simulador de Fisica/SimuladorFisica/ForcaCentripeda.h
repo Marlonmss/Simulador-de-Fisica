@@ -11,10 +11,12 @@ class ForcaCentripeda : public Forca
 public:
 	ForcaCentripeda();
 	ForcaCentripeda(const ForcaCentripeda& copia);
+	ForcaCentripeda(const double& forca_centripeda, const double& massa, const double& velocidade, const double& raio);
 	~ForcaCentripeda();
-	double virtual calcFocaCentripeda();
-	static double calcFocaCentripeda(const double& mass, const double& velo, const double& r);
+	double calcForcaCentripeda();
+	static double calcForcaCentripeda(const double& mass, const double& velo, const double& r);
 	void operator+=(const ForcaCentripeda& inc);
+	virtual void imprimir();
 private:
 	double forca_centripeda;
 	double massa;

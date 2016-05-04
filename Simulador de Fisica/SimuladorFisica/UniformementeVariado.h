@@ -10,8 +10,9 @@ class UniformementeVariado : public Mecanica
 public:
 	UniformementeVariado();
 	UniformementeVariado(const UniformementeVariado& copia);
+	UniformementeVariado(const double& velocidade, const double& eixo_x, const double& aceleracao, const double& tempo);
 	~UniformementeVariado();
-	double mudarVariaveis(const double& velocidade, const double& eixo_x, const double& aceleracao, const double& tempo);
+	void mudarVariaveis(const double& velocidade, const double& eixo_x, const double& aceleracao, const double& tempo);
 	double calcVelocidadeMedia();
 	static double calcVelocidadeMedia(const double& distancia, const double& temp);
 	double calcAceleracaoMedia();

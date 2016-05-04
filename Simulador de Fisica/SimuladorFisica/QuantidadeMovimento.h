@@ -10,6 +10,7 @@ class QuantidadeMovimento : public Forca
 	friend ostream& operator<<(ostream& output, const QuantidadeMovimento& imprime);
 public:
 	QuantidadeMovimento();
+	QuantidadeMovimento(const double& impulso, const double& forca, const double& tempo, const double& quant_movimento, const double& massa, const double& velocidade);
 	QuantidadeMovimento(const QuantidadeMovimento& copia);
 	~QuantidadeMovimento();
 	double virtual calcImpulso();
@@ -17,6 +18,7 @@ public:
 	double virtual calcQuantidadeMovimento();
 	static double calcQuantidadeMovimento(const double& velocidade, const double& massa);
 	void operator+=(const QuantidadeMovimento& inc);
+	virtual void imprimir();
 private:
 	double impulso;
 	double forca;

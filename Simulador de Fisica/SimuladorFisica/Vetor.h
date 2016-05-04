@@ -10,10 +10,11 @@ class Vetor : public Matematica
 	friend ostream& operator<<(ostream& output, const Vetor& imprime);
 public:
 	Vetor();
+	Vetor(const double& x, const double& y);
 	Vetor(const double& x, const double& y, const double& modulo);
 	Vetor(const Vetor& copia);
 	~Vetor();
-	double virtual calcModulo();
+	double calcModulo();
 	static double calcModulo(const Vetor& vet);
 	Vetor operator*(const double& escalar);
 	const Vetor& operator=(const Vetor& vet);

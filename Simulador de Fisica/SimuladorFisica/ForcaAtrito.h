@@ -10,13 +10,15 @@ class ForcaAtrito : public Forca
 	friend ostream& operator<<(ostream& output, const ForcaAtrito& imprime);
 public:
 	ForcaAtrito();
+	ForcaAtrito(const double& atrito, const double& normal, const double& coef_atrito, const double& coef_atrito_e, const double& coef_atrito_d);
 	~ForcaAtrito();
 	ForcaAtrito(const ForcaAtrito& copia);
-	double virtual calcForcaAtrito(const char& eord);
+	double calcForcaAtrito(const char& eord);
 	static double calcForcaAtrito(const double& coef, const double& nor);
 	void operator+=(const ForcaAtrito& inc);
+	virtual void imprimir();
 	
-protected:
+private:
 	double atrito;
 	double normal; 
 	double coef_atrito;

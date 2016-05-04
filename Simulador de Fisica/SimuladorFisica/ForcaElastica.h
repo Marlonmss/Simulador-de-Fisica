@@ -11,12 +11,14 @@ class ForcaElastica : public Forca
 public:
 	ForcaElastica();
 	ForcaElastica(const ForcaElastica& copia);
+	ForcaElastica(const double& forca_elastica, const double& const_elastica, const double& deformacao_mola);
 	~ForcaElastica();
-	double virtual calcForcaElastica();
+	double calcForcaElastica();
 	static double calcForcaElastica(const double& const_e, const double& def);
 	void operator+=(const ForcaElastica& inc);
+	virtual void imprimir();
 private:
-	Vetor forca_elastica;
+	double forca_elastica;
 	double const_elastica;
 	double deformacao_mola;
 

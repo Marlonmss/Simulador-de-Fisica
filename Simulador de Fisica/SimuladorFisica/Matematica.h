@@ -6,12 +6,12 @@ class Matematica
 public:
 	Matematica();
 	~Matematica();
-	double virtual calcModulo() = 0;
-	//Vetor virtual operator*(const double& escalar) = 0;
-	//const Vetor& virtual operator=(const Vetor& vet) = 0;
-	//const Vetor& virtual operator+(const Vetor& vet) = 0;
-	//void virtual operator+=(const Matematica& inc) = 0;
+	
 	void virtual imprimir() = 0;
+	
+	const static double pi = 3.14159265359;
+	static char ch;
+	enum{NEGATIVO, POSITIVO};
 
 };
 

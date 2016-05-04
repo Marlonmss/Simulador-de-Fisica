@@ -9,9 +9,10 @@ class UniformementeVariadoCircular : public Mecanica
 	friend ostream& operator<<(ostream& output, const UniformementeVariadoCircular& imprime);
 public:
 	UniformementeVariadoCircular();
+	UniformementeVariadoCircular(const double& velocidade_angular, const double& eixo_x, const double& deslocamento_angular, const double& aceleracao_angular, const double& tempo, const double& raio, const double& aceleracao_centripeda);
 	UniformementeVariadoCircular(const UniformementeVariadoCircular& copia);
 	~UniformementeVariadoCircular();
-	double mudarVariaveis(const double& velocidade_angular, const double& eixo_x, const double& deslocamento_angular, const double& aceleracao_angular, const double& tempo, const double& raio, const double& aceleracao_centripeda);
+	void mudarVariaveis(const double& velocidade_angular, const double& eixo_x, const double& deslocamento_angular, const double& aceleracao_angular, const double& tempo, const double& raio, const double& aceleracao_centripeda);
 	double calcVelocidadeMedia();
 	static double calcVelocidadeMedia(const double& deslocamento_angular, const double& temp);
 	double calcDeslocamentoAngular();
